@@ -1,17 +1,14 @@
 {
   "name": "contador-palavras-ts",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite --root public",
+    "build": "vite build --root public",
+    "preview": "vite preview --root docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@types/node": "^25.0.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "vite": "latest",
+    "@types/node": "latest",
+    "typescript": "latest",
+    "ts-node": "latest"
   }
 }
