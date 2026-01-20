@@ -1,3 +1,9 @@
-# Contador Palavras TS
+# 🧮 Contador de Palavras (TypeScript)
 
-npm i && npx ts-node src/index.ts
+Função que **conta palavras** em string, considerando palavras separadas por **espaços em branco**.
+
+## ✨ Funcionalidades
+- ✅ `trim()` remove espaços início/fim
+- ✅ `split(/\s+/)` separa por 1+ espaços  
+- ✅ `filter()` ignora palavras vazias
+- ✅ Interface **interativa** via `readline`
