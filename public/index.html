@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Pro | TypeScript</title>
+    <link rel="stylesheet" href="/src/styles/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🧮 Word Counter Pro</h1>
+
+        <div class="input-area">
+            <textarea id="texto" placeholder="Digite ou cole seu texto aqui..." autofocus></textarea>
+        </div>
+
+        <div class="result-card">
+            <div class="result-main" id="palavras">0</div>
+            <div class="result-label">Palavras</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-value" id="caracteres">0</div>
+                <div class="stat-label">Caracteres</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="linhas">1</div>
+                <div class="stat-label">Linhas</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Feito com ❤️ por <a href="https://github.com/mandymagalhaes" target="_blank">Amanda Magalhães</a>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
