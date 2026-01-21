@@ -1,9 +1,9 @@
 {
   "name": "contador-palavras-ts",
   "scripts": {
-    "dev": "vite --root public",
-    "build": "vite build --root public",
-    "preview": "vite preview --root docs"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "latest",
