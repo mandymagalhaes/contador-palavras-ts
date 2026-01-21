@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Counter Pro | TypeScript</title>
+    <title>Contador de Palavras</title>
     <link rel="stylesheet" href="./src/styles/app.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>🧮 Word Counter Pro</h1>
+        <h1>Contador de Palavras</h1>
 
         <div class="input-area">
-            <textarea id="texto" placeholder="Digite ou cole seu texto aqui..." autofocus></textarea>
+            <textarea id="texto" placeholder="Digite seu texto aqui..."></textarea>
         </div>
 
-        <div class="result-card">
-            <div class="result-main" id="palavras">0</div>
-            <div class="result-label">Palavras</div>
-        </div>
+        <div class="result-card"></div>
 
         <div class="stats-grid">
             <div class="stat-item">
-                <div class="stat-value" id="caracteres">0</div>
+                <div id="palavras" class="stat-value">0</div>
+                <div class="stat-label">Palavras</div>
+            </div>
+            <div class="stat-item">
+                <div id="caracteres" class="stat-value">0</div>
                 <div class="stat-label">Caracteres</div>
             </div>
             <div class="stat-item">
-                <div class="stat-value" id="linhas">1</div>
+                <div id="linhas" class="stat-value">0</div>
                 <div class="stat-label">Linhas</div>
             </div>
         </div>
 
         <div class="footer">
-            Feito com ❤️ por <a href="https://github.com/mandymagalhaes" target="_blank">Amanda Magalhães</a>
+            <p>Feito com ❤️</p>
+            <a href="#">@mandymagalhaes</a>
         </div>
     </div>
 
-    <script type="module" src="./src/main.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>

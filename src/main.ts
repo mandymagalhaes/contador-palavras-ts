@@ -1,23 +1,16 @@
-import { WordCounter } from './modules/WordCounter.ts';
+const texto = document.getElementById('texto') as HTMLTextAreaElement;
+const palavrasEl = document.getElementById('palavras') as HTMLDivElement;
+const caracteresEl = document.getElementById('caracteres') as HTMLDivElement;
+const linhasEl = document.getElementById('linhas') as HTMLDivElement;
 
-const textareaElement = document.getElementById('texto') as HTMLTextAreaElement;
-const palavrasElement = document.getElementById('palavras') as HTMLElement;
-const caracteresElement = document.getElementById('caracteres') as HTMLElement;
-const linhasElement = document.getElementById('linhas') as HTMLElement;
+texto.addEventListener('input', () => {
+    const valor = texto.value;
 
-const counter = new WordCounter();
+    const palavras = valor.trim() ? valor.trim().split(/\s+/).length : 0;
+    const caracteres = valor.length;
+    const linhas = valor.split('\n').length;
 
-function atualizarInterface(): void {
-    const stats = counter.getEstatisticas();
-    palavrasElement.textContent = stats.palavras.toString();
-    caracteresElement.textContent = stats.caracteres.toString();
-    linhasElement.textContent = stats.linhas.toString();
-}
-
-textareaElement.addEventListener('input', (e: Event) => {
-    const target = e.target as HTMLTextAreaElement;
-    counter.atualizarTexto(target.value);
-    atualizarInterface();
+    palavrasEl.textContent = palavras.toString();
+    caracteresEl.textContent = caracteres.toString();
+    linhasEl.textContent = linhas.toString();
 });
-
-atualizarInterface();
