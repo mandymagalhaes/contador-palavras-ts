@@ -1,5 +1,11 @@
+interface Estatisticas {
+    palavras: number;
+    caracteres: number;
+    linhas: number;
+}
+
 export class WordCounter {
-    private texto: string;
+    private texto: string = '';
 
     constructor(texto: string = '') {
         this.texto = texto;
@@ -21,7 +27,7 @@ export class WordCounter {
         this.texto = novoTexto;
     }
 
-    getEstatisticas() {
+    getEstatisticas(): Estatisticas {
         return {
             palavras: this.contarPalavras(),
             caracteres: this.contarCaracteres(),
