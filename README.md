@@ -3,7 +3,7 @@
 
 ## ✨ **Demo**
 ```
-🔗 https://mandymagalhaes.github.io/contador-palavras-ts/
+🔗 https://contador-palavras-ts.vercel.app/
 🖥️ localhost:3000 (npm run dev)
 ```
 
